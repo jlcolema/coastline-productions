@@ -1,0 +1,86 @@
+<!doctype html>
+
+<html lang="en">
+
+<head>
+
+	<meta charset="utf-8" />
+
+	<title>New Video</title>
+
+	<meta name="description" content="A simple HTML5 media player with custom controls and WebVTT captions.">
+
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+
+	<!-- Styles -->
+
+	<link rel="stylesheet" href="assets/css/plyr.css">
+
+	<style type="text/css">
+
+		.plyr {
+
+			width: 480px;
+			height: 270px;
+
+		}
+
+			.plyr__play-large {
+
+				cursor: pointer;
+
+			}
+
+
+
+			.plyr--init-hide-controls .plyr__play-large {
+
+				display: none;
+
+			}
+
+			.plyr--init-hide-controls .plyr__controls {
+
+				display: none;
+
+			}
+
+	</style>
+
+</head>
+
+<body>
+
+	<video poster="images/coastline-demo-2017-poster-original.jpg">
+
+		<source src="coastline-demo-2017-new.mp4" type="video/mp4">
+
+		<!-- <source src="/path/to/video.webm" type="video/webm"> -->
+
+	</video>
+
+<script src="https://code.jquery.com/jquery-2.2.4.min.js" integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44=" crossorigin="anonymous"></script>
+
+	<!-- Video -->
+
+	<script src="assets/js/plyr.js"></script>
+
+	<script>
+
+		plyr.setup();
+
+		$('.plyr').on('ready', function(event) {
+
+			$(this).addClass('plyr--init-hide-controls');
+
+		}).on('play', function(event) {
+
+			$(this).removeClass('plyr--init-hide-controls');
+
+		});
+
+	</script>
+
+	</body>
+
+</html>

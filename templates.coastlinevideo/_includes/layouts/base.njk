@@ -1,0 +1,195 @@
+---
+title: Home
+---
+
+<!doctype html>
+
+<html lang="" class="">
+
+<head>
+
+	<meta charset="utf-8" />
+
+	<title>{{ title }} &mdash; Coastline Productions</title>
+
+	<meta name="description" content="A very nice description." />
+
+	<meta name="keywords" content="coastline, productions" />
+
+	<meta name="viewport" content="width=device-width, initial-scale=1" />
+
+	<link rel="icon" href="/assets/img/favicon.png" />
+
+	<link rel="apple-touch-icon" href="/assets/img/touch-icon.png" />
+
+	{% set css %}
+
+		{% include 'css/common/normalize.css' %}
+		{% include 'css/common/variables.css' %}
+		{% include 'css/common/fonts.css' %}
+		{% include 'css/common/baseline.css' %}
+		{% include 'css/common/miscellaneous.css' %}
+
+		{% include 'css/sections/hero.css' %}
+		{% include 'css/sections/banner.css' %}
+		{% include 'css/sections/testimonials.css' %}
+
+		{% include 'css/layouts/header.css' %}
+		{% include 'css/layouts/main.css' %}
+		{% include 'css/layouts/footer.css' %}
+
+	{% endset %}
+
+	<style>
+
+		{{ css | cssmin | safe }}
+
+	</style>
+
+</head>
+
+<body>
+
+	<header role="header" class="header l-header">
+
+		<div class="wrap header__wrap l-header__wrap">
+
+			<div class="logo">
+
+				<a href="/" class="logo__link">
+				
+					{% include 'assets/logo.svg' %}
+				
+				</a>
+
+			</div>
+
+			<nav role="nav" class="nav">
+
+				<div class="nav__toggle">
+
+					<span class="nav__label">Menu</span>
+
+				</div>
+
+				<ol class="nav__list">
+
+					<li class="nav__item">
+
+						<a href="/services/" class="nav__link">Services</a>
+
+					</li>
+
+					<li class="nav__item">
+
+						<a href="/portfolio/" class="nav__link">Portfolio</a>
+	
+					</li>
+
+					<li class="nav__item">
+
+						<a href="/about/" class="nav__link">About</a>
+	
+					</li>
+
+					<li class="nav__item">
+
+						<a href="/rates/" class="nav__link">Rates</a>
+	
+					</li>
+
+					<li class="nav__item">
+
+						<a href="/contact/" class="nav__link">Contact</a>
+		
+					</li>
+
+				</ol>
+
+			</nav>
+
+		</div>
+
+	</header>
+
+	<main role="main" class="main l-main">
+
+		<div class="wrap main__wrap l-main__wrap">
+
+			{{ content | safe }}
+
+			<!-- Testimonials -->
+
+			{% include 'testimonials.njk' %}			
+
+		</div>
+
+	</main>
+
+	<footer role="contentinfo" class="footer l-footer">
+
+		<div class="wrap footer__wrap l-footer__wrap">
+
+			<div class="secondary-logo">
+
+				<a href="/" class="secondary-logo__link">
+				
+					{% include 'assets/logo-reversed.svg' %}
+				
+				</a>
+
+			</div>
+
+			<nav role="nav" class="secondary-nav">
+
+				<ol class="secondary-nav__list">
+
+					<li class="secondary-nav__item">
+
+						<a href="/services/" class="secondary-nav__link">Services</a>
+
+					</li>
+
+					<li class="secondary-nav__item">
+
+						<a href="/portfolio/" class="secondary-nav__link">Portfolio</a>
+	
+					</li>
+
+					<li class="secondary-nav__item">
+
+						<a href="/about/" class="secondary-nav__link">About</a>
+	
+					</li>
+
+					<li class="secondary-nav__item">
+
+						<a href="/rates/" class="secondary-nav__link">Rates</a>
+	
+					</li>
+
+					<li class="secondary-nav__item">
+
+						<a href="/contact/" class="secondary-nav__link">Contact</a>
+		
+					</li>
+
+				</ol>
+
+			</nav>
+
+			<p class="copyright">Copyright 2019, Coastline Productions.</p>
+
+		</div>
+
+	</footer>
+
+</body>
+
+	<script type="text/javascript" src="/assets/js/jquery.js"></script>
+
+	<script type="text/javascript" src="https://player.vimeo.com/api/player.js"></script>
+
+	<script type="text/javascript" src="/assets/js/functions.js"></script>
+
+</html>

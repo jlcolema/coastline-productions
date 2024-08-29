@@ -1,0 +1,140 @@
+/*--------------------------------------
+   Fonts
+--------------------------------------*/
+
+/* Notes... */
+
+/* Open Sans
+------------------------------------- */
+
+/*
+Font Family: Graphik
+Service: Commercial Type
+URL: https://commercialtype.com/catalog/graphik
+Foundry: Christian Schwartz, Hrvoje Živčić, Berton Hasebe
+*/
+
+/* Currently in use:
+
+Light
+Light Italic
+Regular
+Regular Italic
+Semibold
+Semibold Italic
+Bold
+Bold Italic
+Extrabold
+Extrabold Italic
+
+*/
+
+/* Light */
+
+/* @font-face {
+
+    font-family: 'Open Sans Light';
+    src: url('/assets/fonts/open-sans/light/open-sans-light.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+} */
+
+/* Light Italic */
+
+/* @font-face {
+
+    font-family: 'Open Sans Light Italic';
+    src: url('/assets/fonts/open-sans/light-italic/open-sans-light-italic.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+} */
+
+/* Regular */
+
+@font-face {
+
+    font-family: 'Open Sans Regular';
+    src: url('/assets/fonts/open-sans/regular/open-sans-regular.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+/* Regular Italic */
+
+@font-face {
+
+    font-family: 'Open Sans Regular Italic';
+    src: url('/assets/fonts/open-sans/regular-italic/open-sans-regular-italic.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+/* Semibold */
+
+/* @font-face {
+
+    font-family: 'Open Sans Semibold';
+    src: url('/assets/fonts/open-sans/semibold/open-sans-semibold.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+} */
+
+/* Semibold Italic */
+
+/* @font-face {
+
+    font-family: 'Open Sans Semibold Italic';
+    src: url('/assets/fonts/open-sans/semibold-italic/open-sans-semibold-italic.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+} */
+
+/* Bold */
+
+@font-face {
+
+    font-family: 'Open Sans Bold';
+    src: url('/assets/fonts/open-sans/bold/open-sans-bold.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+/* Bold Italic */
+
+@font-face {
+
+    font-family: 'Open Sans Bold Italic';
+    src: url('/assets/fonts/open-sans/bold-italic/open-sans-bold-italic.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+/* Extrabold */
+
+/* @font-face {
+
+    font-family: 'Open Sans Extrabold';
+    src: url('/assets/fonts/open-sans/extrabold/open-sans-extrabold.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+} */
+
+/* Extrabold Italic */
+
+/* @font-face {
+
+    font-family: 'Open Sans Extrabold Italic';
+    src: url('/assets/fonts/open-sans/extrabold-italic/open-sans-extrabold-italic.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+} */
